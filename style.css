@@ -886,6 +886,14 @@ iframe {
   margin-right: 20px;
 }
 
+
+
+body {
+  display: block;
+}
+
+
+
 @media (max-width: 760px) {
   .header-elements,
   .header-logo__container, 
@@ -1039,9 +1047,8 @@ iframe {
   }
 }
 
-body {
-  display: block;
-}
+
+
 
 @media (max-width: 1046px) {
   .showcase-about__title {
