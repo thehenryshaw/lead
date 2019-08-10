@@ -1039,12 +1039,9 @@ iframe {
   }
 }
 
-
-
 body {
   display: block;
 }
-
 
 @media (max-width: 1046px) {
   .showcase-about__title {
