@@ -1,14 +1,24 @@
 'use strict';
 
 const bars = document.querySelector('.burger');
-const showItems = document.querySelector('.hide-list');
+const showMenu = document.querySelector('.hide-menu');
+const languageSelection = document.querySelector('.language-selection');
+const showLang = document.querySelector('.hidden');
 
 bars.addEventListener('click', () => {
-  showItems.classList.toggle('hide-list');
+  showMenu.classList.toggle('hide-menu');
 })
 
 window.addEventListener('resize', () => {
   if (window.innerWidth > 760) {
-    showItems.classList.add('hide-list');
+    showMenu.classList.add('hide-menu');
   }
+})
+
+languageSelection.addEventListener('mouseover', () => {
+  showLang.classList.remove('hidden');
+})
+
+languageSelection.addEventListener('mouseleave', () => {
+  showLang.classList.add('hidden');
 })

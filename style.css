@@ -42,7 +42,7 @@ body {
   background-color: #010101;
 }
 
-.hide-list {
+.hide-menu {
   display: none;
 }
 
@@ -76,6 +76,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .header-logo__container {
@@ -101,8 +102,6 @@ body {
   padding: 0;
   display: flex;
   display: inline-flex;
-  flex-wrap: wrap;
-  
 }
 
 .list-container li {
@@ -131,6 +130,7 @@ body {
 }
 
 .language-selection {
+  position: relative;
   margin-top: 15px;
   padding: 0;
 }
@@ -138,6 +138,21 @@ body {
 .flag {
   width: 20px;
   height: 15px;
+}
+
+.lang-menu {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 140px;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.hidden {
+  display: none;
 }
 
 .lang {
@@ -156,12 +171,20 @@ body {
   background-color: #fff;
 }
 
-.hidden li a {
+.lang-menu li {
+  margin: 0;
+}
+
+.lang-menu li a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.lang-menu li a:hover {
+  color: #4FC3F7;
 }
 
 .rus-title {
@@ -170,19 +193,6 @@ body {
 
 .eng-title {
   color: #727272;
-}
-
-.hidden li a:hover {
-  color: #4FC3F7;
-}
-
-.hidden {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  visibility: hidden;
 }
 
 /* Showcase */
@@ -888,6 +898,32 @@ iframe {
 
 
 
+@media (max-width: 1046px) {
+  .showcase-about__title {
+    padding-bottom: 50px;
+  }
+  .partners-count__container {
+    flex-direction: column;
+  }
+  .contacts-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacts-form__container {
+    width: 560px;
+  }
+  .contacts-form__map {
+    width: 710px;
+    text-align: center;
+  }
+  .footer-navigation__container, .footer-contacts__container,.footer-social__container {
+    width: auto;
+  }
+}
+
+
+
 @media (max-width: 760px) {
   .header-elements,
   .header-logo__container, 
@@ -1038,31 +1074,5 @@ iframe {
     margin-top: 2px;
     margin-left: 5px;
     font-size: 13px;
-  }
-}
-
-
-
-@media (max-width: 1046px) {
-  .showcase-about__title {
-    padding-bottom: 50px;
-  }
-  .partners-count__container {
-    flex-direction: column;
-  }
-  .contacts-container {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
-  .contacts-form__container {
-    width: 560px;
-  }
-  .contacts-form__map {
-    width: 710px;
-    text-align: center;
-  }
-  .footer-navigation__container, .footer-contacts__container,.footer-social__container {
-    width: auto;
   }
 }
