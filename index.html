@@ -8,14 +8,14 @@
   <link href="https://fonts.googleapis.com/css?family=Orbitron:500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet">
-<!--   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/9888c2209f.js"></script>
   <title>Document</title>
 </head>
 <body>
-  <header id="header">
+  <div class="header-container">
+  <header class="header">
     <div class="bgc"><button class="burger"><i class="fas fa-bars"></i></button></div>
     <div class="burger-list__container hide-menu">
       <ul class="burger-list">
@@ -34,13 +34,13 @@
         <a href="#" class="logo-item">lead</a>
       </div>
         <ul class="list-container">
-          <li class="list-items"><a href="#" class="chosen">Главная</a></li>
-          <li class="list-items"><a href="#">Карьера</a></li>
-          <li class="list-items"><a href="#">Миссия</a></li>
-          <li class="list-items"><a href="#">Партнеры</a></li>
-          <li class="list-items"><a href="#">Отзывы</a></li>
-          <li class="list-items"><a href="#">Team</a></li>
-          <li class="list-items"><a href="#">Контакты</a></li>
+          <li class="list-items"><a href="#" data-id="showcase" class="chosen">Главная</a></li>
+          <li class="list-items"><a href="#" data-id="work">Карьера</a></li>
+          <li class="list-items"><a href="#" data-id="mission">Миссия</a></li>
+          <li class="list-items"><a href="#" data-id="partners">Партнеры</a></li>
+          <li class="list-items"><a href="#" data-id="reviews">Отзывы</a></li>
+          <li class="list-items"><a href="#" data-id="team">Team</a></li>
+          <li class="list-items"><a href="#" data-id="contacts">Контакты</a></li>
           <ul class="language-selection">
             <li><a href="#" title="Русский"><img src="./img/ru.png" alt="Русский" class="flag"></a></li>
             <ul class="lang-menu hidden">
@@ -51,6 +51,7 @@
         </ul>
     </div>
   </header>
+</div>
 
   <section id="showcase">
       <div class="showcase-logo__container">
@@ -284,14 +285,14 @@
         <div class="footer-title">Наши представительства</div>
         <ul class="footer-contacts__list russian">
           <li class="footer-contacts__item"><div class="icon-container"><i class="fas fa-map-marker-alt icon"></i></div>Россия, Санкт-Петербург</li>
-          <li class="footer-contacts__item"><div class="icon-container"><i class="far fa-bookmark icon"></i></div>В.О., 18 линия, 29А, БЦ "Сенатор"</li>
-          <li class="footer-contacts__item"><div class="icon-container"><i class="fas fa-phone-alt icon"></i></div><a href="+7 (996) 796 45 30">+7 (996) 796 45 30</a></li>
-          <li class="footer-contacts__item"><div class="icon-container"><i class="far fa-paper-plane icon"></i></div><a href="feedback@fmedia-group.com">feedback@fmedia-group.com</a></li>
+          <li class="footer-contacts__item"><div class="icon-container"><i class="far fa-bookmark icon"></i></div>Н.П., 2 линия, 29А, БЦ "Телеком"</li>
+          <li class="footer-contacts__item"><div class="icon-container"><i class="fas fa-phone-alt icon"></i></div><a href="+7 (991) 754 85 13">+7 (991) 754 85 13</a></li>
+          <li class="footer-contacts__item"><div class="icon-container"><i class="far fa-paper-plane icon"></i></div><a href="feedback@lead-group.com">feedback@fmedia-group.com</a></li>
         </ul>
         <ul class="footer-contacts__list scotland">
           <li class="footer-contacts__item"><div class="icon-container"><i class="fas fa-map-marker-alt icon"></i></div>Scotland, Edinburgh</li>
-          <li class="footer-contacts__item"><div class="icon-container"><i class="far fa-bookmark icon"></i></div>4 Queen St., EH2</li>
-          <li class="footer-contacts__item"><div class="icon-container"><i class="far fa-paper-plane icon"></i></div><a href="feedback@fmedia-group.com">feedback@fmedia-group.com</a></li>
+          <li class="footer-contacts__item"><div class="icon-container"><i class="far fa-bookmark icon"></i></div>7 Queen St., EH2</li>
+          <li class="footer-contacts__item"><div class="icon-container"><i class="far fa-paper-plane icon"></i></div><a href="feedback@lead-group.com">feedback@lead-group.com</a></li>
         </ul>
       </div>
       <div class="footer-social__container">
