@@ -6,6 +6,7 @@ const languageSelection = document.querySelector('.language-selection');
 const showLang = document.querySelector('.hidden');
 const menuLinks = Array.from(document.querySelectorAll('.list-items a'));
 const menu = document.querySelector('.list-container');
+const barsList = document.querySelector('.burger-list');
 
 const header = document.querySelector('.header');
 const showcaseSection = document.getElementById('showcase');
@@ -79,9 +80,51 @@ menu.addEventListener('click', event => {
       top = contactsSection.offsetTop;
       break;
   }
-  console.log(top);
   window.scrollTo({
     top: top - 85,
+    behavior: 'smooth'
+  })
+})
+
+barsList.addEventListener('click', event => {
+  if (event.target.classList.contains('burger-list')) {
+    return;
+  }
+  event.preventDefault();
+  let top;
+
+  switch (event.target.dataset.id) {
+    case 'showcase':
+      showMenu.classList.add('hide-menu');
+      top = showcaseSection.offsetTop;
+      break;
+    case 'work':
+      showMenu.classList.add('hide-menu');
+      top = workSection.offsetTop;
+      break;
+    case 'mission':
+      showMenu.classList.add('hide-menu');
+      top = missionSection.offsetTop;
+      break;
+    case 'partners':
+      showMenu.classList.add('hide-menu');
+      top = partnersSection.offsetTop;
+      break;
+    case 'reviews':
+      showMenu.classList.add('hide-menu');
+      top = reviewsSection.offsetTop;
+      break;
+    case 'team':
+      showMenu.classList.add('hide-menu');
+      top = teamSection.offsetTop;
+      break;
+    case 'contacts':
+      showMenu.classList.add('hide-menu');
+      top = contactsSection.offsetTop;
+      break;
+  }
+  window.scrollTo({
+    top: top - 50,
     behavior: 'smooth'
   })
 })
